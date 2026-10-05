@@ -11,7 +11,6 @@ Two core workflows:
 Run:
     streamlit run app.py
 
-Author: BSERC Internship Project
 """
 
 import os
@@ -78,12 +77,6 @@ page = st.sidebar.radio(
     label_visibility="collapsed",
 )
 
-st.sidebar.markdown("---")
-st.sidebar.markdown(
-    "<div class='footer-note'>Built for BSERC Internship<br>"
-    "ISRO-focused orbital safety demo</div>",
-    unsafe_allow_html=True,
-)
 
 # --------------------------------------------------------------------------
 # Header
@@ -740,5 +733,4 @@ Plotly · OpenCV · Celestrak / Space-Track TLE APIs
 **Disclaimer:** This is an academic/internship demonstration project.
         """
     )
-    st.markdown("<div class='footer-note'>BSERC Internship Project · 2026</div>",
-                unsafe_allow_html=True)
+
