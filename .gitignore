@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.streamlit/
+*.pt
+!models/.gitkeep
+data/tle_cache.json
+.DS_Store

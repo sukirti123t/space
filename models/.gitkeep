@@ -1,0 +1,4 @@
+Place your custom-trained YOLOv8 weights here as: yolov8_debris.pt
+
+If this file is absent, detect.py automatically falls back to a stock
+Ultralytics YOLOv8n model so the app remains demoable out of the box.

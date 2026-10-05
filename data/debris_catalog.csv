@@ -1,0 +1,11 @@
+name,norad_id,object_type,origin,approx_size_m
+PSLV R/B (Debris),40269,Rocket Body,India,3.0
+Fengyun 1C Debris,29659,Fragmentation Debris,China,0.1
+Cosmos 2251 Debris,34427,Fragmentation Debris,Russia,0.2
+Iridium 33 Debris,33777,Fragmentation Debris,USA,0.2
+SL-16 R/B,23405,Rocket Body,Russia,4.0
+Delta 1 Debris,26207,Fragmentation Debris,USA,0.1
+Meteor 2-5 Debris,13018,Fragmentation Debris,Russia,0.15
+H-2A R/B,28932,Rocket Body,Japan,3.5
+NOAA 16 Debris,26536,Fragmentation Debris,USA,0.2
+Ariane 44 R/B,25876,Rocket Body,France,2.5

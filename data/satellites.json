@@ -1,0 +1,75 @@
+{
+  "_comment": "NORAD Catalog IDs for prominent ISRO satellites. Verify/update IDs periodically via https://celestrak.org since some spacecraft are retired or renumbered.",
+  "satellites": [
+    {
+      "name": "Cartosat-3",
+      "norad_id": 44804,
+      "type": "Earth Observation",
+      "launch_year": 2019,
+      "agency": "ISRO"
+    },
+    {
+      "name": "RISAT-2B",
+      "norad_id": 44233,
+      "type": "Radar Imaging",
+      "launch_year": 2019,
+      "agency": "ISRO"
+    },
+    {
+      "name": "EOS-04 (RISAT-1A)",
+      "norad_id": 50167,
+      "type": "Radar Imaging",
+      "launch_year": 2022,
+      "agency": "ISRO"
+    },
+    {
+      "name": "GSAT-30",
+      "norad_id": 44929,
+      "type": "Communication",
+      "launch_year": 2020,
+      "agency": "ISRO"
+    },
+    {
+      "name": "INSAT-3DR",
+      "norad_id": 41752,
+      "type": "Meteorological",
+      "launch_year": 2016,
+      "agency": "ISRO"
+    },
+    {
+      "name": "Oceansat-2",
+      "norad_id": 35931,
+      "type": "Ocean Observation",
+      "launch_year": 2009,
+      "agency": "ISRO"
+    },
+    {
+      "name": "Cartosat-2A",
+      "norad_id": 32783,
+      "type": "Earth Observation",
+      "launch_year": 2008,
+      "agency": "ISRO"
+    },
+    {
+      "name": "Chandrayaan-2 Orbiter",
+      "norad_id": 44441,
+      "type": "Lunar Orbiter",
+      "launch_year": 2019,
+      "agency": "ISRO"
+    },
+    {
+      "name": "GSAT-6A",
+      "norad_id": 43241,
+      "type": "Communication",
+      "launch_year": 2018,
+      "agency": "ISRO"
+    },
+    {
+      "name": "EOS-01",
+      "norad_id": 46905,
+      "type": "Radar Imaging",
+      "launch_year": 2020,
+      "agency": "ISRO"
+    }
+  ]
+}

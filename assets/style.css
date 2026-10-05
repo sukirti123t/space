@@ -1,0 +1,191 @@
+/* ---------- BSERC Space Debris Dashboard: Dark Space Theme ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.stApp {
+    background: radial-gradient(ellipse at top, #0d1224 0%, #05060f 60%, #000000 100%);
+    background-attachment: fixed;
+    color: #e6ecff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Starfield dots overlay */
+.stApp::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, #ffffff55, transparent),
+        radial-gradient(1px 1px at 90px 120px, #ffffff44, transparent),
+        radial-gradient(1.5px 1.5px at 160px 60px, #ffffff66, transparent),
+        radial-gradient(1px 1px at 220px 200px, #ffffff33, transparent),
+        radial-gradient(1.5px 1.5px at 300px 90px, #ffffff55, transparent),
+        radial-gradient(1px 1px at 400px 250px, #ffffff44, transparent);
+    background-repeat: repeat;
+    background-size: 420px 420px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+h1, h2, h3 {
+    color: #7cf5ff !important;
+    text-shadow: 0 0 12px rgba(124, 245, 255, 0.35);
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #7cf5ff, #b388ff 60%, #ff8fd6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    color: #9aa4c7;
+    font-size: 1.0rem;
+    margin-top: 4px;
+}
+
+.metric-card {
+    background: rgba(20, 26, 51, 0.75);
+    border: 1px solid rgba(124, 245, 255, 0.25);
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 0 20px rgba(124, 245, 255, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 24px rgba(124, 245, 255, 0.15);
+}
+
+/* NEO-specific cards */
+.neo-card {
+    background: rgba(20, 26, 51, 0.8);
+    border: 1px solid rgba(124, 245, 255, 0.18);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, border-color 0.3s ease;
+}
+.neo-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(124, 245, 255, 0.45);
+}
+
+.neo-stat {
+    display: inline-block;
+    background: rgba(124, 245, 255, 0.08);
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 3px 4px;
+    font-size: 0.85rem;
+}
+
+/* Tracker card */
+.tracker-card {
+    background: linear-gradient(135deg, rgba(20, 26, 51, 0.85), rgba(42, 28, 72, 0.5));
+    border: 1px solid rgba(179, 136, 255, 0.25);
+    border-radius: 14px;
+    padding: 18px;
+    margin: 6px 0;
+    transition: border-color 0.3s ease;
+}
+.tracker-card:hover {
+    border-color: rgba(179, 136, 255, 0.55);
+}
+
+/* Risk badges */
+.risk-CRITICAL {
+    color: #ff2d55;
+    font-weight: 700;
+    text-shadow: 0 0 14px rgba(255, 45, 85, 0.7);
+    animation: pulse-critical 1.5s ease-in-out infinite;
+}
+@keyframes pulse-critical {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.risk-HIGH {
+    color: #ff5470;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 84, 112, 0.6);
+}
+.risk-MEDIUM {
+    color: #ffb84d;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 184, 77, 0.5);
+}
+.risk-LOW {
+    color: #7cf5ff;
+    font-weight: 700;
+}
+.risk-NEGLIGIBLE {
+    color: #6dff9e;
+    font-weight: 700;
+}
+
+/* Status indicator dot */
+.status-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: blink 2s ease-in-out infinite;
+}
+.status-dot.live { background: #6dff9e; }
+.status-dot.cached { background: #ffb84d; }
+.status-dot.demo { background: #ff5470; }
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #090b16 0%, #0d1224 100%);
+    border-right: 1px solid rgba(124, 245, 255, 0.15);
+}
+
+.stButton>button {
+    background: linear-gradient(90deg, #1c2748, #2a1c48);
+    color: #7cf5ff;
+    border: 1px solid rgba(124, 245, 255, 0.4);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.stButton>button:hover {
+    border-color: #7cf5ff;
+    box-shadow: 0 0 16px rgba(124, 245, 255, 0.5);
+    color: #ffffff;
+}
+
+.footer-note {
+    color: #6c7599;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* API key info banner */
+.api-banner {
+    background: rgba(124, 245, 255, 0.06);
+    border: 1px solid rgba(124, 245, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    color: #9aa4c7;
+    margin-bottom: 12px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d1224; }
+::-webkit-scrollbar-thumb { background: rgba(124, 245, 255, 0.3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(124, 245, 255, 0.5); }

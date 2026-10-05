@@ -1,0 +1,17 @@
+streamlit>=1.38.0
+ultralytics>=8.2.0
+opencv-python-headless>=4.10.0
+skyfield>=1.49
+numpy>=1.26.0
+pandas>=2.2.0
+plotly>=5.24.0
+Pillow>=10.4.0
+requests>=2.32.0
+astropy>=6.1.0
+python-dateutil>=2.9.0
+
+# Optional -- only needed to run train_yolo.py / download the Kaggle dataset
+kaggle>=1.6.0
+
+# Report generation
+fpdf2>=2.8.0
