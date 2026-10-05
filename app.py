@@ -72,7 +72,6 @@ page = st.sidebar.radio(
         "📋 Batch Risk Screening",
         "🌠 NASA NEO Threat Monitor",
         "📡 Live Satellite Tracker",
-        "ℹ️ About the Project",
     ],
     label_visibility="collapsed",
 )
@@ -698,39 +697,4 @@ elif page == "📡 Live Satellite Tracker":
                         legend=dict(bgcolor="rgba(0,0,0,0)"), margin=dict(l=0,r=0,t=0,b=0), height=520,
                     )
                     st.plotly_chart(fig3d, use_container_width=True)
-
-# ==========================================================================
-# PAGE 6: About
-# ==========================================================================
-else:
-    st.subheader("ℹ️ About This Project")
-    st.markdown(
-        """
-**AI-Driven Space Debris Detection and Collision Prediction System**
-combines computer vision, orbital mechanics, and real NASA data into a
-single decision-support tool aimed at Indian satellite operators.
-
-**Pipeline overview**
-1. **Detection layer (`detect.py`)** — A YOLOv8 model localizes candidate
-   debris objects in telescope/radar-derived imagery.
-2. **Orbital layer (`orbit.py`)** — Real TLE data (Celestrak + Space-Track)
-   is propagated with SGP4 via Skyfield.
-3. **Risk layer** — Miss distance, velocity, and size produce a risk
-   classification and pseudo-probability score.
-4. **NASA NEO Monitor (`nasa_api.py`)** — Live asteroid/NEO threat feed
-   from NASA's NeoWs API with multi-factor risk scoring.
-5. **Satellite Tracker (`satellite_tracker.py`)** — Real-time position
-   tracking of ISRO satellites with ground track visualization.
-
-**Tech stack:** Streamlit · YOLOv8 · Skyfield (SGP4) · NASA NeoWs API ·
-Plotly · OpenCV · Celestrak / Space-Track TLE APIs
-
-**Getting a NASA API Key:**
-1. Visit [https://api.nasa.gov](https://api.nasa.gov)
-2. Fill the signup form (free, instant)
-3. Set `NASA_API_KEY` as an environment variable or in `.streamlit/secrets.toml`
-
-**Disclaimer:** This is an academic/internship demonstration project.
-        """
-    )
 
