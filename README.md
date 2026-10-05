@@ -273,14 +273,6 @@ collision-avoidance decisions — operational conjunction assessment
 requires full position-covariance data and is performed by agencies such
 as ISRO/ISTRAC, NASA CARA, and the 18th Space Defense Squadron.
 
----
-
-## 📜 License
-
-MIT License — free to use and adapt for academic purposes with attribution.
-
----
-
 ## 🙌 Acknowledgements
 
 - [Celestrak](https://celestrak.org) for open TLE data access
