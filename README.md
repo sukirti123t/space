@@ -175,24 +175,12 @@ ALERT_EMAIL_TO       = "you@example.com"
 ALERT_EMAIL_PASSWORD = "app-specific-password"
 ```
 
-Telegram bot tokens are free via [@BotFather](https://t.me/BotFather);
-for Gmail, use an [app password](https://myaccount.google.com/apppasswords)
-rather than your real password.
+
 
 ---
 
-## 📸 Screenshots
 
-_Add real screenshots here before submission — they matter a lot for
-BSERC evaluators skimming your README:_
 
-1. Run the app locally: `streamlit run app.py`
-2. Capture: (a) the Debris Image Detection tab with a detection result,
-   (b) the Collision Risk Predictor tab showing a risk score + 3D orbit
-   plot, (c) the Batch Risk Screening ranked table.
-3. Save them into a new `assets/screenshots/` folder and embed here, e.g.:
-
-```markdown
 ![Detection Demo](assets/screenshots/detection.png)
 ![Collision Risk](assets/screenshots/collision_risk.png)
 ![Batch Screening](assets/screenshots/batch_screening.png)
