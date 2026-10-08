@@ -180,9 +180,3 @@ ALERT_EMAIL_PASSWORD = "app-specific-password"
 ---
 
 
-
-![Detection Demo](assets/screenshots/detection.png)
-![Collision Risk](assets/screenshots/collision_risk.png)
-![Batch Screening](assets/screenshots/batch_screening.png)
-```
-
